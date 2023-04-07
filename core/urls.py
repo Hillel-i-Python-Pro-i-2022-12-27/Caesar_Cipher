@@ -20,4 +20,5 @@ from django.urls import path, include
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("caesar_cipher/", include("apps.caesar_cipher.urls")),
+    path("", include("apps.caesar_cipher.urls_root")),
 ]
