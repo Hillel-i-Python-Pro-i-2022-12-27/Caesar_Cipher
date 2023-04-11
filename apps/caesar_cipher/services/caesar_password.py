@@ -1,4 +1,3 @@
-# from apps.caesar_cipher import models
 import string
 
 
@@ -81,6 +80,7 @@ def decrypto(text: str, key: int):
     return "".join(newtext)
 
 
-crypto_result = crypto(text="fgf RTRY АПР", key=500)
-print(crypto_result)
-print(decrypto(text=crypto_result, key=500))
+if __name__ == "__main__":
+    crypto_result = crypto(text="fgf RTRY АПР", key=500)
+    print(crypto_result)
+    print(decrypto(text=crypto_result, key=500))
